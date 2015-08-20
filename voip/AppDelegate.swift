@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  voip
+//  Voip
 //
 //  Created by Pierre-Marc Airoldi on 2015-02-15.
 //  Copyright (c) 2015 Pierre-Marc Airoldi. All rights reserved.
@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.registerUserNotificationSettings(notificationSettings)
 
         //output what state the app is in. This will be used to see when the app is started in the background
-        NSLog("app launched with state \(application.applicationState.stringValue)")
+        println("app launched with state \(application.applicationState.stringValue)")
         
         return true
     }
@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
 
         //output to see when we terminate the app
-        NSLog("App terminated")
+        println("app terminated")
     }
 }
 
@@ -41,27 +41,30 @@ extension AppDelegate {
         
         //register for voip notifications
         let voipRegistry = PKPushRegistry(queue: dispatch_get_main_queue())
-        voipRegistry.desiredPushTypes = NSSet(array: [PKPushTypeVoIP])
+        voipRegistry.desiredPushTypes = Set([PKPushTypeVoIP])
         voipRegistry.delegate = self;
     }
 }
 
 extension AppDelegate: PKPushRegistryDelegate {
 
+    
     func pushRegistry(registry: PKPushRegistry!, didUpdatePushCredentials credentials: PKPushCredentials!, forType type: String!) {
-        
+    
         //print out the VoIP token. We will use this to test the nofications.
-        NSLog("voip token: \(credentials.token)")
+        println("voip token: \(credentials.token)")
     }
     
     func pushRegistry(registry: PKPushRegistry!, didReceiveIncomingPushWithPayload payload: PKPushPayload!, forType type: String!) {
+    
+        let payloadDict = payload.dictionaryPayload["aps"] as? Dictionary<String, String>
+        let message = payloadDict?["alert"]
         
         //present a local notifcation to visually see when we are recieving a VoIP Notification
-        
         if UIApplication.sharedApplication().applicationState == UIApplicationState.Background {
         
             let localNotification = UILocalNotification();
-            localNotification.alertBody = "VoIP Notification Recieved"
+            localNotification.alertBody = message
             localNotification.applicationIconBadgeNumber = 1;
             localNotification.soundName = UILocalNotificationDefaultSoundName;
 
@@ -72,17 +75,17 @@ extension AppDelegate: PKPushRegistryDelegate {
             
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 
-                let alert = UIAlertView(title: "VoIP Notification", message: nil, delegate: nil, cancelButtonTitle: "Ok");
+                let alert = UIAlertView(title: "VoIP Notification", message: message, delegate: nil, cancelButtonTitle: "Ok");
                 alert.show()
             })
         }
         
-        NSLog("incoming voip notfication: \(payload.dictionaryPayload)")
+        println("incoming voip notfication: \(payload.dictionaryPayload)")
     }
     
     func pushRegistry(registry: PKPushRegistry!, didInvalidatePushTokenForType type: String!) {
         
-        NSLog("token invalidated")
+        println("token invalidated")
     }
 }
 

@@ -8,45 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		064CE1811A91A48200BFA035 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064CE1801A91A48200BFA035 /* AppDelegate.swift */; };
-		064CE1831A91A48200BFA035 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064CE1821A91A48200BFA035 /* ViewController.swift */; };
 		064CE1861A91A48200BFA035 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 064CE1841A91A48200BFA035 /* Main.storyboard */; };
 		064CE1881A91A48200BFA035 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 064CE1871A91A48200BFA035 /* Images.xcassets */; };
 		064CE18B1A91A48200BFA035 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 064CE1891A91A48200BFA035 /* LaunchScreen.xib */; };
-		064CE1971A91A48200BFA035 /* voipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064CE1961A91A48200BFA035 /* voipTests.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		064CE1911A91A48200BFA035 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 064CE1731A91A48100BFA035 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 064CE17A1A91A48200BFA035;
-			remoteInfo = voip;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		064CE17B1A91A48200BFA035 /* voip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = voip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		064CE17B1A91A48200BFA035 /* Voip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		064CE17F1A91A48200BFA035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		064CE1801A91A48200BFA035 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		064CE1821A91A48200BFA035 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		064CE1851A91A48200BFA035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		064CE1871A91A48200BFA035 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		064CE18A1A91A48200BFA035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		064CE1901A91A48200BFA035 /* voipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = voipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		064CE1951A91A48200BFA035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		064CE1961A91A48200BFA035 /* voipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voipTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		064CE1781A91A48200BFA035 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		064CE18D1A91A48200BFA035 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,8 +36,7 @@
 		064CE1721A91A48100BFA035 = {
 			isa = PBXGroup;
 			children = (
-				064CE17D1A91A48200BFA035 /* voip */,
-				064CE1931A91A48200BFA035 /* voipTests */,
+				064CE17D1A91A48200BFA035 /* Voip */,
 				064CE17C1A91A48200BFA035 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,22 +44,21 @@
 		064CE17C1A91A48200BFA035 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				064CE17B1A91A48200BFA035 /* voip.app */,
-				064CE1901A91A48200BFA035 /* voipTests.xctest */,
+				064CE17B1A91A48200BFA035 /* Voip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		064CE17D1A91A48200BFA035 /* voip */ = {
+		064CE17D1A91A48200BFA035 /* Voip */ = {
 			isa = PBXGroup;
 			children = (
 				064CE1801A91A48200BFA035 /* AppDelegate.swift */,
-				064CE1821A91A48200BFA035 /* ViewController.swift */,
 				064CE1841A91A48200BFA035 /* Main.storyboard */,
 				064CE1871A91A48200BFA035 /* Images.xcassets */,
 				064CE1891A91A48200BFA035 /* LaunchScreen.xib */,
 				064CE17E1A91A48200BFA035 /* Supporting Files */,
 			);
+			name = Voip;
 			path = voip;
 			sourceTree = "<group>";
 		};
@@ -95,29 +70,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		064CE1931A91A48200BFA035 /* voipTests */ = {
-			isa = PBXGroup;
-			children = (
-				064CE1961A91A48200BFA035 /* voipTests.swift */,
-				064CE1941A91A48200BFA035 /* Supporting Files */,
-			);
-			path = voipTests;
-			sourceTree = "<group>";
-		};
-		064CE1941A91A48200BFA035 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				064CE1951A91A48200BFA035 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		064CE17A1A91A48200BFA035 /* voip */ = {
+		064CE17A1A91A48200BFA035 /* Voip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 064CE19A1A91A48200BFA035 /* Build configuration list for PBXNativeTarget "voip" */;
+			buildConfigurationList = 064CE19A1A91A48200BFA035 /* Build configuration list for PBXNativeTarget "Voip" */;
 			buildPhases = (
 				064CE1771A91A48200BFA035 /* Sources */,
 				064CE1781A91A48200BFA035 /* Frameworks */,
@@ -127,28 +85,10 @@
 			);
 			dependencies = (
 			);
-			name = voip;
+			name = Voip;
 			productName = voip;
-			productReference = 064CE17B1A91A48200BFA035 /* voip.app */;
+			productReference = 064CE17B1A91A48200BFA035 /* Voip.app */;
 			productType = "com.apple.product-type.application";
-		};
-		064CE18F1A91A48200BFA035 /* voipTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 064CE19D1A91A48200BFA035 /* Build configuration list for PBXNativeTarget "voipTests" */;
-			buildPhases = (
-				064CE18C1A91A48200BFA035 /* Sources */,
-				064CE18D1A91A48200BFA035 /* Frameworks */,
-				064CE18E1A91A48200BFA035 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				064CE1921A91A48200BFA035 /* PBXTargetDependency */,
-			);
-			name = voipTests;
-			productName = voipTests;
-			productReference = 064CE1901A91A48200BFA035 /* voipTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -168,13 +108,9 @@
 							};
 						};
 					};
-					064CE18F1A91A48200BFA035 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 064CE17A1A91A48200BFA035;
-					};
 				};
 			};
-			buildConfigurationList = 064CE1761A91A48100BFA035 /* Build configuration list for PBXProject "voip" */;
+			buildConfigurationList = 064CE1761A91A48100BFA035 /* Build configuration list for PBXProject "Voip" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -187,8 +123,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				064CE17A1A91A48200BFA035 /* voip */,
-				064CE18F1A91A48200BFA035 /* voipTests */,
+				064CE17A1A91A48200BFA035 /* Voip */,
 			);
 		};
 /* End PBXProject section */
@@ -204,13 +139,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		064CE18E1A91A48200BFA035 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -218,28 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				064CE1831A91A48200BFA035 /* ViewController.swift in Sources */,
 				064CE1811A91A48200BFA035 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		064CE18C1A91A48200BFA035 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				064CE1971A91A48200BFA035 /* voipTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		064CE1921A91A48200BFA035 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 064CE17A1A91A48200BFA035 /* voip */;
-			targetProxy = 064CE1911A91A48200BFA035 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		064CE1841A91A48200BFA035 /* Main.storyboard */ = {
@@ -345,9 +256,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = voip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -356,50 +269,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = voip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		064CE19E1A91A48200BFA035 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = voipTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/voip.app/voip";
-			};
-			name = Debug;
-		};
-		064CE19F1A91A48200BFA035 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = voipTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/voip.app/voip";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		064CE1761A91A48100BFA035 /* Build configuration list for PBXProject "voip" */ = {
+		064CE1761A91A48100BFA035 /* Build configuration list for PBXProject "Voip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				064CE1981A91A48200BFA035 /* Debug */,
@@ -408,20 +289,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		064CE19A1A91A48200BFA035 /* Build configuration list for PBXNativeTarget "voip" */ = {
+		064CE19A1A91A48200BFA035 /* Build configuration list for PBXNativeTarget "Voip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				064CE19B1A91A48200BFA035 /* Debug */,
 				064CE19C1A91A48200BFA035 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		064CE19D1A91A48200BFA035 /* Build configuration list for PBXNativeTarget "voipTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				064CE19E1A91A48200BFA035 /* Debug */,
-				064CE19F1A91A48200BFA035 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

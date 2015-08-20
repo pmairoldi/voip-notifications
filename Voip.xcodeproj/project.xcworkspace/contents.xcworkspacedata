@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:voip.xcodeproj">
+      location = "self:/Users/pierremarcairoldi/Developer/cocoa/voip-notifications/Voip.xcodeproj">
    </FileRef>
 </Workspace>
