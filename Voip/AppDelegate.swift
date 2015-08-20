@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.registerUserNotificationSettings(notificationSettings)
 
         //output what state the app is in. This will be used to see when the app is started in the background
-        println("app launched with state \(application.applicationState.stringValue)")
+        NSLog("app launched with state \(application.applicationState.stringValue)")
         
         return true
     }
@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
 
         //output to see when we terminate the app
-        println("app terminated")
+        NSLog("app terminated")
     }
 }
 
@@ -52,7 +52,7 @@ extension AppDelegate: PKPushRegistryDelegate {
     func pushRegistry(registry: PKPushRegistry!, didUpdatePushCredentials credentials: PKPushCredentials!, forType type: String!) {
     
         //print out the VoIP token. We will use this to test the nofications.
-        println("voip token: \(credentials.token)")
+        NSLog("voip token: \(credentials.token)")
     }
     
     func pushRegistry(registry: PKPushRegistry!, didReceiveIncomingPushWithPayload payload: PKPushPayload!, forType type: String!) {
@@ -80,12 +80,12 @@ extension AppDelegate: PKPushRegistryDelegate {
             })
         }
         
-        println("incoming voip notfication: \(payload.dictionaryPayload)")
+        NSLog("incoming voip notfication: \(payload.dictionaryPayload)")
     }
     
     func pushRegistry(registry: PKPushRegistry!, didInvalidatePushTokenForType type: String!) {
         
-        println("token invalidated")
+        NSLog("token invalidated")
     }
 }
 
